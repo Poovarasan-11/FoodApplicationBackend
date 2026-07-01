@@ -10,4 +10,6 @@ import java.util.List;
 public interface OrderRepo extends JpaRepository<BuyProduct,Integer> {
 
     public List<BuyProduct> findByEmail(String email);
+
+    long countByEmail(String email);
 }
